@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outil d'Implémentation IFS Broker</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>IFS Broker</h2>
+        <span class="badge">Outil</span>
+      </div>
+      <nav>
+        <a href="#" class="nav-link active" data-page="dashboard">
+          <span class="icon">📊</span> Tableau de Bord
+        </a>
+        <a href="#" class="nav-link" data-page="checklist">
+          <span class="icon">✅</span> Audit IFS
+        </a>
+        <a href="#" class="nav-link" data-page="documents">
+          <span class="icon">📂</span> Documents
+        </a>
+        <a href="#" class="nav-link" data-page="settings">
+          <span class="icon">⚙️</span> Paramètres
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="btn-export" class="btn btn-outline" style="width: 100%; justify-content: flex-start;">
+          💾 Exporter Audit
+        </button>
+        <button id="btn-import" class="btn btn-outline" style="width: 100%; justify-content: flex-start;">
+          📂 Importer .brok
+        </button>
+        <input type="file" id="file-input" accept=".brok" style="display: none;" />
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <h1 id="page-title">Tableau de Bord</h1>
+        <div class="user-profile">
+          <span>Utilisateur</span>
+        </div>
+      </header>
+
+      <div id="content-area" class="content-area">
+        <!-- Dynamic Content Will Be Loaded Here -->
+      </div>
+    </main>
+  </div>
+  <!-- Load Data First -->
+  <script src="./data.js"></script>
+  <!-- Load App Logic -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
