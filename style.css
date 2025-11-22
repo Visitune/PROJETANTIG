@@ -52,24 +52,6 @@ body {
 }
 
 .logo {
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  background: linear-gradient(to right, var(--primary-color), #60a5fa);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.badge {
-  background-color: rgba(59, 130, 246, 0.1);
-  color: var(--primary-color);
-  font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius-full);
   font-weight: 600;
@@ -602,23 +584,6 @@ body {
 }
 
 .file-upload-area {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.file-status {
-  font-size: 0.85rem;
-}
-
-color: var(--text-muted);
-margin-bottom: 0.5rem;
-}
-
-.styled-textarea,
-.styled-input {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   color: var(--text-color);
